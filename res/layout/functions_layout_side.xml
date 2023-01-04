@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/keypad_devider" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:id="@id/primaryBtns_side" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<Button android:text="x²" style="@style/FonctionButtons" />
+		<Button android:text="xʸ" style="@style/FonctionButtons" />
+		<Button android:text="|x|" style="@style/FonctionButtons" />
+		<Button android:text="π" style="@style/FonctionButtons" />
+		<Button android:text="e" style="@style/FonctionButtons" />
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical" android:id="@id/secondaryBtns_side" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<Button android:text="2ˣ" style="@style/FonctionButtons" />
+		<Button android:text="x³" style="@style/FonctionButtons" />
+		<Button android:text="sinh" style="@style/FonctionButtons" />
+		<Button android:text="cosh" style="@style/FonctionButtons" />
+		<Button android:text="tanh" style="@style/FonctionButtons" />
+	</LinearLayout>
+</LinearLayout>

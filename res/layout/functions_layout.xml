@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/keypad_devider" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:id="@id/primaryBtns" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="⇆" android:onClick="switchToSecondary" style="@style/FonctionButtons" />
+			<Button android:id="@id/Rad" android:text="Rad" android:onClick="RadBtn" style="@style/FonctionButtons" />
+			<Button android:text="√" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="sin" style="@style/FonctionButtons" />
+			<Button android:text="cos" style="@style/FonctionButtons" />
+			<Button android:text="tan" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="ln" style="@style/FonctionButtons" />
+			<Button android:text="log" style="@style/FonctionButtons" />
+			<Button android:text="1/x" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="eˣ" style="@style/FonctionButtons" />
+			<Button android:text="x²" style="@style/FonctionButtons" />
+			<Button android:text="xʸ" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="|x|" style="@style/FonctionButtons" />
+			<Button android:text="π" style="@style/FonctionButtons" />
+			<Button android:text="e" style="@style/FonctionButtons" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical" android:id="@id/secondaryBtns" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="⇆" android:onClick="switchToPrimary" style="@style/FonctionButtons" />
+			<Button android:id="@id/Rad2" android:text="Rad" android:onClick="RadBtn" style="@style/FonctionButtons" />
+			<Button android:text="³√x" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="sin⁻¹" style="@style/FonctionButtons" />
+			<Button android:text="cos⁻¹" style="@style/FonctionButtons" />
+			<Button android:text="tan⁻¹" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="sinh" style="@style/FonctionButtons" />
+			<Button android:text="cosh" style="@style/FonctionButtons" />
+			<Button android:text="tanh" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="sinh⁻¹" style="@style/FonctionButtons" />
+			<Button android:text="cosh⁻¹" style="@style/FonctionButtons" />
+			<Button android:text="tanh⁻¹" style="@style/FonctionButtons" />
+		</LinearLayout>
+		<LinearLayout style="@style/match_parent_horizontal_1">
+			<Button android:text="2ˣ" style="@style/FonctionButtons" />
+			<Button android:text="x³" style="@style/FonctionButtons" />
+			<Button android:text="x!" style="@style/FonctionButtons" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

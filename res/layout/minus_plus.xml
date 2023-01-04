@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+	<Button android:textColor="@color/clearTextColor" android:id="@id/btn_clear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="C" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+	<Button android:id="@id/plusMinus" android:text="±" android:layout_weight="1.0" android:onClick="handleClick" android:textAllCaps="true" style="@style/numbers_btn" />
+	<Button android:gravity="center" android:id="@id/arrows" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="⇅" android:layout_weight="1.0" android:onClick="switchUnits" style="@style/arrows" />
+	<RelativeLayout android:gravity="center" android:background="@drawable/button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="openCalc">
+		<ImageView android:id="@id/calc_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_foreground" />
+	</RelativeLayout>
+</LinearLayout>

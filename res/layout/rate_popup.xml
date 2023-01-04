@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:background="@drawable/rounded_rect" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+		<Button android:layout_gravity="end" android:id="@id/close" android:background="@drawable/ic_cancel" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_margin="10.0dip" />
+		<TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/rate_text_1" />
+		<ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/ic_stars" />
+		<TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/rate_text_2" />
+		<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+			<Button android:textColor="#ff000000" android:id="@id/suggestions" android:background="@drawable/rounded_rect_black_strock" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="@string/suggestion" android:layout_weight="1.0" />
+			<Button android:textColor="#ffffffff" android:id="@id/fiveStars" android:background="@drawable/rounded_rect_blue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="@string/give_5_stars" android:layout_weight="1.0" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="100.0dip">
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_love" />
+	</LinearLayout>
+</RelativeLayout>

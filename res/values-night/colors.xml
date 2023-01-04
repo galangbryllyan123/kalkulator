@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="buttonTextColor">#ffc5c5c5</color>
+<color name="buttonTextColorDisabled">#ff666666</color>
+<color name="buttonsBackgroundColor">#ff202020</color>
+<color name="fonctionButtonsBackgroundColor">#ff171717</color>
+<color name="formulTextColor">#ffcccccc</color>
+<color name="keypad_devider">#ff373737</color>
+<color name="layoutBackgroundColor">#ff5f6366</color>
+<color name="resultBackgroundColor">#ff0a0a0a</color>
+<color name="resultTextColor">#ffaaaaaa</color>
+<color name="settings_hint_color">#b2aaaaaa</color>
+<color name="unit_converter_spinner">@color/formulTextColor</color>
+<color name="unit_converter_title">@color/formulTextColor</color>
+</resources>

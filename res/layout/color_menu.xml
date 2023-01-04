@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<GridLayout android:orientation="horizontal" android:id="@id/color_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rowCount="3" android:columnCount="6">
+		<ImageView android:theme="@style/AppTheme_1" android:id="@id/_1" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_2" android:id="@id/_2" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_3" android:id="@id/_3" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_4" android:id="@id/_4" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_5" android:id="@id/_5" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_6" android:id="@id/_6" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_7" android:id="@id/_7" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_8" android:id="@id/_8" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_9" android:id="@id/_9" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_10" android:id="@id/_10" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_11" android:id="@id/_11" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_12" android:id="@id/_12" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_13" android:id="@id/_13" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_14" android:id="@id/_14" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_15" android:id="@id/_15" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_16" android:id="@id/_16" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_17" android:id="@id/_17" android:background="?colorPrimary" style="@style/text_view_color" />
+		<ImageView android:theme="@style/AppTheme_18" android:id="@id/_18" android:background="?colorPrimary" style="@style/text_view_color" />
+	</GridLayout>
+</LinearLayout>

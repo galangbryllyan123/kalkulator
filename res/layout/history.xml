@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+		<androidx.appcompat.widget.Toolbar android:id="@id/my_toolbar" android:background="@drawable/toolbar_background" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:textDirection="locale" android:elevation="4.0dip" app:title="@string/history" app:titleTextColor="@color/unit_converter_title" />
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layoutDirection="ltr">
+			<ListView android:id="@id/history_list" android:background="@color/resultBackgroundColor" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@color/layoutBackgroundColor" android:dividerHeight="1.0dip" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+		</LinearLayout>
+		<TextView android:textSize="26.0sp" android:gravity="center" android:id="@id/noHistory_TV" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/noHistory" android:layout_centerInParent="true" />
+		<ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+	</RelativeLayout>
+</LinearLayout>

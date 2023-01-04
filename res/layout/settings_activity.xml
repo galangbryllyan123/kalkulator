@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/mainmenu" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:background="@color/resultBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<androidx.appcompat.widget.Toolbar android:id="@id/my_toolbar" android:background="@drawable/toolbar_background" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="4.0dip" app:title="@string/settings" app:titleTextColor="@color/unit_converter_title" />
+		<ScrollView android:id="@id/scrollView" android:background="@color/buttonsBackgroundColor" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+			<LinearLayout android:orientation="vertical" android:background="@color/layoutBackgroundColor" android:layout_width="fill_parent" android:layout_height="0.0dip">
+				<LinearLayout android:onClick="switchNightTime" style="@style/settings_item">
+					<TextView android:text="@string/set_auto_night_time" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/switchNightTime" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:orientation="vertical" android:id="@id/timeContainer" android:layout_width="fill_parent" android:layout_height="0.0dip">
+					<LinearLayout android:onClick="fromTime" style="@style/settings_item">
+						<TextView android:text="@string/from_time" style="@style/inner_textView_settings" />
+						<Button android:id="@id/fromTime_btn" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginEnd="20.0dip" />
+					</LinearLayout>
+					<LinearLayout android:onClick="toTime" style="@style/settings_item">
+						<TextView android:text="@string/to_time" style="@style/inner_textView_settings" />
+						<Button android:id="@id/toTime_btn" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginEnd="20.0dip" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:layout_marginTop="1.0dip" android:onClick="switchBip" style="@style/settings_item">
+					<TextView android:text="@string/enable_keypress_bip" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/switchBip" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:onClick="switchVibrate" style="@style/settings_item">
+					<TextView android:text="@string/enable_keypress_vibrat" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/switchVibrate" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:layout_marginTop="1.0dip" android:onClick="switchFullScreen" style="@style/settings_item">
+					<TextView android:text="@string/enable_full_screen" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/switchFullScreen" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:onClick="enable_00" style="@style/settings_item">
+					<TextView android:text="@string/enable_00" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/switch_00" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:onClick="enable_000" style="@style/settings_item">
+					<TextView android:text="@string/enable_000" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/switch_000" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:layout_marginTop="1.0dip" android:onClick="E_notation" style="@style/settings_item">
+					<TextView android:text="@string/E_notation" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/E_notation" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:onClick="forceLandMode" style="@style/settings_item">
+					<TextView android:text="@string/embed_scientific_buttons" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/forceLandMode" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:layout_marginTop="1.0dip" android:onClick="repeatCalc" style="@style/settings_item">
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+						<TextView android:layout_height="wrap_content" android:text="@string/repeatCalc" style="@style/inner_textView_settings" />
+						<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/repeatCalcHint" android:paddingStart="0.0dip" style="@style/settings_hint" />
+					</LinearLayout>
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/repeatCalc" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:layout_marginTop="1.0dip" android:onClick="keepRecord" style="@style/settings_item">
+					<TextView android:text="@string/keep_record" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/keepRecord" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:onClick="keepScreen" style="@style/settings_item">
+					<TextView android:text="@string/keep_screen" style="@style/inner_textView_settings" />
+					<androidx.appcompat.widget.SwitchCompat android:id="@id/keepScreen" style="@style/switch_settings" />
+				</LinearLayout>
+				<LinearLayout android:layout_marginTop="1.0dip" android:onClick="changeColor" style="@style/settings_item">
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+						<TextView android:text="@string/changeColor" style="@style/inner_textView_settings" />
+					</LinearLayout>
+					<TextView android:layout_gravity="center" android:id="@id/changeColor" android:clickable="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" style="@style/backgroundStyle" />
+				</LinearLayout>
+				<TextView android:id="@id/changeFont" android:text="@string/changeFont" android:onClick="changeFont" style="@style/textView_settings" />
+				<TextView android:id="@id/changeNumbersSize" android:text="@string/changeNumbersSize" android:onClick="changeNumbersSize" style="@style/textView_settings" />
+				<TextView android:layout_marginTop="1.0dip" android:text="@string/changeLanguage" android:onClick="changeLanguage" style="@style/textView_settings" />
+				<TextView android:layout_marginTop="1.0dip" android:text="@string/change_numerals" android:onClick="changeNumerals" style="@style/textView_settings" />
+				<TextView android:text="@string/change_format" android:onClick="changeDecimal" style="@style/textView_settings" />
+				<TextView android:text="@string/decimal_places" android:onClick="decimalPlaces" style="@style/textView_settings" />
+				<TextView android:id="@id/decimal_layout" android:text="@string/change_comma_position" android:onClick="commaPosition" style="@style/textView_settings" />
+				<TextView android:layout_marginTop="1.0dip" android:text="@string/manage_task_bar_btns" android:onClick="manageBtns" style="@style/textView_settings" />
+				<LinearLayout android:orientation="vertical" android:id="@id/disableAds" android:layout_marginTop="1.0dip" android:onClick="disableAds" style="@style/settings_item">
+					<TextView android:layout_height="wrap_content" android:text="@string/disableAds" style="@style/inner_textView_settings" />
+					<TextView android:id="@id/remaingMinutes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remaingMinutes" android:paddingStart="0.0dip" style="@style/settings_hint" />
+				</LinearLayout>
+				<TextView android:layout_marginTop="1.0dip" android:text="@string/share_app" android:onClick="shareApp" style="@style/textView_settings" />
+				<TextView android:text="@string/other_apps" android:onClick="otherApps" style="@style/textView_settings" />
+				<TextView android:id="@id/sendSuggestion" android:text="@string/send_suggestion" android:onClick="sendSuggestion" style="@style/textView_settings" />
+				<TextView android:id="@id/reportProblem" android:text="@string/report_problem" android:onClick="reportProblem" style="@style/textView_settings" />
+				<TextView android:textSize="@dimen/settings_view_text_size" android:text="@string/privacy_policy" android:onClick="privacy" style="@style/textView_settings" />
+				<TextView android:textSize="@dimen/settings_view_text_size" android:id="@id/version" android:text="@string/version" style="@style/textView_settings" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</FrameLayout>

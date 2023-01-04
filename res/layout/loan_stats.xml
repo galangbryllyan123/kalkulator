@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/loanStats" android:background="@color/fonctionButtonsBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:baselineAligned="false" android:layoutDirection="ltr">
+		<RelativeLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_weight="1.0" android:layout_marginStart="70.0dip">
+			<TextView android:gravity="center" android:id="@id/months_stats" android:background="@drawable/gst_percent_left_selected" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/months" />
+		</RelativeLayout>
+		<RelativeLayout android:gravity="start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="70.0dip" android:layout_weight="1.0" android:layout_marginEnd="70.0dip">
+			<TextView android:gravity="center" android:id="@id/years_stats" android:background="@drawable/gst_percent_right" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/years" />
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:id="@id/loanMonthsStatsTitles" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/year" android:layout_weight="0.6" />
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/month" android:layout_weight="0.6" />
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/principal" android:layout_weight="1.0" />
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/interest" android:layout_weight="1.0" />
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/balance" android:layout_weight="1.0" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:id="@id/loanYearsStatsTitles" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/year" android:layout_weight="0.5" />
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/principal" android:layout_weight="1.0" />
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/interest" android:layout_weight="1.0" />
+		<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/balance" android:layout_weight="1.0" />
+	</LinearLayout>
+	<TextView android:background="@color/buttonTextColor" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:elevation="1.0dip" />
+	<ListView android:id="@id/loan_stats_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:divider="@color/layoutBackgroundColor" android:dividerHeight="1.0dip" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+	<TextView android:textSize="@dimen/dummy_ae_88" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/share_bg" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/close" android:onClick="closeLoanStats" android:textAllCaps="true" />
+</LinearLayout>

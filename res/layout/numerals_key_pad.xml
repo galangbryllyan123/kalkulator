@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@id/parent_keyPad" android:background="@color/keypad_devider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.8" android:layoutDirection="ltr">
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+		<Button android:textColor="@color/clearTextColor" android:id="@id/btn_clear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="C" android:layout_weight="0.5" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_F" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="F" android:layout_weight="0.75" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_E" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="E" android:layout_weight="0.75" android:onClick="handleClick" style="@style/numbers_btn" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+		<Button android:id="@id/btn_7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="7" android:shadowColor="@color/colorPrimary" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="8" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="9" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_D" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="D" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+		<Button android:id="@id/btn_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="4" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="5" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="6" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_C" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="C" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+		<Button android:id="@id/btn_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="2" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="3" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_B" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="B" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+			<TextView android:textColor="@color/layoutBackgroundColor" android:id="@id/btn_tmp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0" android:elevation="0.0dip" app:autoSizeTextType="uniform" />
+			<Button android:id="@id/_0p_1" android:background="@drawable/button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="0" android:onClick="handleClick" android:elevation="10.0dip" style="@style/numbers_btn" />
+		</RelativeLayout>
+		<Button android:id="@id/_0p_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="00" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/_0p_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="." android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+		<Button android:id="@id/btn_A" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="A" android:shadowColor="@color/colorPrimary" android:layout_weight="1.0" android:onClick="handleClick" style="@style/numbers_btn" />
+	</LinearLayout>
+</LinearLayout>

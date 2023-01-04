@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="Angle" />
+<style name="Area" />
+<style name="Bmi_height" />
+<style name="Bmi_weight" />
+<style name="Currency" />
+<style name="Data" />
+<style name="Energy" />
+<style name="Force" />
+<style name="Frequency" />
+<style name="Fuel" />
+<style name="Length" />
+<style name="Mass" />
+<style name="NumeralSystem" />
+<style name="Power" />
+<style name="Pressure" />
+<style name="Speed" />
+<style name="Temperature" />
+<style name="Time" />
+<style name="Volume" />
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/fonctionButtonsBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="fromDate">
+					<TextView android:textSize="@dimen/dummy_ae_88" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dateOfBirth" />
+					<TextView android:textSize="@dimen/dummy_ae_88" android:gravity="end" android:id="@id/bithDate" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/textColorStyle" />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:onClick="toDate">
+					<TextView android:textSize="@dimen/dummy_ae_88" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/today" />
+					<TextView android:textSize="@dimen/dummy_ae_88" android:gravity="end" android:id="@id/todayDate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/controlLayout" android:background="@drawable/date_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:elevation="2.0dip">
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginStart="15.0dip">
+						<TextView android:textSize="@dimen/numbers_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/age" />
+						<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+							<TextView android:textSize="@dimen/formula_text_size" android:id="@id/ageNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textColorStyle" />
+							<TextView android:id="@id/ageNumberYearsText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginStart="5.0dip" />
+						</LinearLayout>
+						<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+							<TextView android:id="@id/ageMonths" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="|" />
+							<TextView android:id="@id/ageDays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textAllCaps="false" />
+						</LinearLayout>
+					</LinearLayout>
+					<TextView android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/line_separator" />
+					<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginEnd="10.0dip">
+						<TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nextBirthday" style="@style/textColorStyle" />
+						<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/age_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+							<ImageView android:layout_width="@dimen/taskbar_icon" android:layout_height="@dimen/taskbar_icon" android:src="@drawable/ic_age_white" />
+						</LinearLayout>
+						<TextView android:gravity="center" android:id="@id/nextBirthDayName" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+						<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+							<TextView android:id="@id/nextBirthMonths" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+							<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="|" />
+							<TextView android:id="@id/nextBirthDays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textAllCaps="false" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<TextView android:layout_width="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="@style/line_separator" />
+				<TextView android:textSize="@dimen/dummy_ae_88" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/summary" style="@style/textColorStyle" />
+				<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+						<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+							<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+								<TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/years" />
+								<TextView android:id="@id/summaryYears" android:layout_width="wrap_content" style="@style/date_difference_tv" />
+							</LinearLayout>
+							<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+								<TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days" />
+								<TextView android:textSize="15.0sp" android:id="@id/summaryDays" android:layout_width="wrap_content" style="@style/date_difference_tv" />
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+							<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/months" />
+								<TextView android:id="@id/summaryMonths" style="@style/date_difference_tv" />
+							</LinearLayout>
+							<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+								<TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours" />
+								<TextView android:textSize="15.0sp" android:id="@id/summaryHours" style="@style/date_difference_tv" />
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+							<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+								<TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weeks" />
+								<TextView android:id="@id/summaryWeeks" style="@style/date_difference_tv" />
+							</LinearLayout>
+							<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+								<TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes" />
+								<TextView android:textSize="15.0sp" android:id="@id/summaryMinutes" style="@style/date_difference_tv" />
+							</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<TextView android:textSize="10.0sp" android:id="@id/poweredBy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:textSize="@dimen/dummy_ae_88" android:gravity="center" android:background="@drawable/button_selector" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/addToCalendar" android:layout_weight="1.0" android:onClick="adeBithDayToCalendar" />
+		<TextView android:textSize="@dimen/dummy_ae_88" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/share_bg" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share" android:layout_weight="1.0" android:onClick="shareAge" />
+	</LinearLayout>
+</LinearLayout>

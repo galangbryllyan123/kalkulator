@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/mainmenu" android:background="@color/buttonsBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/main" />
+		<RelativeLayout android:gravity="center" android:id="@id/bottom_banner_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item type="dimen" name="taskbar_wrapper_height">2.4</item>
+<dimen name="unit_converter_arrow_size_small">40.0sp</dimen>
+<item type="dimen" name="unit_converter_taskbar_height">1.2</item>
+</resources>

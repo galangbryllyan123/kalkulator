@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="formula_text_size">65.0sp</dimen>
+<dimen name="result_text_size">45.0sp</dimen>
+<dimen name="taskbar_back_icon">45.0dip</dimen>
+<dimen name="taskbar_icon">40.0dip</dimen>
+<dimen name="function_text_size">38.0sp</dimen>
+<dimen name="numbers_text_size">65.0sp</dimen>
+<dimen name="numbers_text_size_land">60.0sp</dimen>
+</resources>

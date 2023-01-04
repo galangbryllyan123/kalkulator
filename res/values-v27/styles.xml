@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="parentTheme" parent="@style/AppTheme"><item name="android:colorControlNormal">?colorPrimary</item><item name="android:statusBarColor">@color/resultBackgroundColor</item><item name="android:navigationBarColor">@color/resultBackgroundColor</item><item name="android:timePickerStyle">@style/MyTimePickerStyle</item><item name="android:windowLightNavigationBar">@bool/lightBar</item><item name="colorAccent">?colorPrimary</item><item name="colorBackgroundFloating">@color/buttonsBackgroundColor</item><item name="colorPrimaryDark">?colorPrimary</item></style>
+</resources>

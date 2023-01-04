@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/buttonsBackgroundColor" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<TextView android:textSize="16.0sp" android:textColor="@color/buttonTextColor" android:gravity="center" android:paddingTop="5.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/unit_converter" android:textAllCaps="true" android:fontFamily="sans-serif-black" />
+		<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical" android:id="@id/unitContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<LinearLayout android:id="@id/Currency" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/CurrencyImage" android:src="@drawable/ic_currency" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/CurrencyText" android:text="@string/currency" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Area" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/AreaImage" android:src="@drawable/ic_area" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/AreaText" android:text="@string/area" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Length" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/LengthImage" android:src="@drawable/ic_length" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/LengthText" android:text="@string/length" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Temperature" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/TemperatureImage" android:src="@drawable/ic_temperature" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/TemperatureText" android:text="@string/temperature" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Volume" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/VolumeImage" android:src="@drawable/ic_volume" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/VolumeText" android:text="@string/volume" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Mass" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/MassImage" android:src="@drawable/ic_mass" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/MassText" android:text="@string/mass" style="@style/meter_menu_textView" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+					<LinearLayout android:id="@id/Data" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/DataImage" android:src="@drawable/ic_data" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/DataText" android:text="@string/data" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Speed" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/SpeedImage" android:src="@drawable/ic_speed" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/SpeedText" android:text="@string/speed" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Time" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/TimeImage" android:src="@drawable/ic_time" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/TimeText" android:text="@string/time" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Date" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/DateImage" android:src="@drawable/ic_date" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/DateText" android:text="@string/date" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Bmi" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/BmiImage" android:src="@drawable/ic_bmi" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/BmiText" android:text="@string/bmi" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Discount" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/DiscountImage" android:src="@drawable/ic_discount" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/DiscountText" android:text="@string/discount" style="@style/meter_menu_textView" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+					<LinearLayout android:id="@id/Age" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/AgeImage" android:src="@drawable/ic_age" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/AgeText" android:text="@string/age" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/NumeralSystem" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/NumeralSystemImage" android:src="@drawable/ic_numeralsystem" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/NumeralSystemText" android:text="@string/numeralsystem" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/GST" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/GSTImage" android:src="@drawable/ic_gst" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/GSTText" android:text="@string/gst" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/SplitBill" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/SplitBillImage" android:src="@drawable/ic_splitbill" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/SplitBillText" android:text="@string/splitbill" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Energy" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/EnergyImage" android:src="@drawable/ic_energy" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/EnergyText" android:text="@string/energy" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Frequency" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/FrequencyImage" android:src="@drawable/ic_frequency" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/FrequencyText" android:text="@string/frequency" style="@style/meter_menu_textView" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+					<LinearLayout android:id="@id/Fuel" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/FuelImage" android:src="@drawable/ic_fuel" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/FuelText" android:text="@string/fuel" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Angle" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/AngleImage" android:src="@drawable/ic_angle" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/AngleText" android:text="@string/angle" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Pressure" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/PressureImage" android:src="@drawable/ic_pressure" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/PressureText" android:text="@string/pressure" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Force" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/ForceImage" android:src="@drawable/ic_force" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/ForceText" android:text="@string/force" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Power" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/PowerImage" android:src="@drawable/ic_power" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/PowerText" android:text="@string/power" style="@style/meter_menu_textView" />
+					</LinearLayout>
+					<LinearLayout android:id="@id/Loan" android:background="@drawable/button_selector" style="@style/meter_menu_item">
+						<ImageView android:id="@id/LoanImage" android:src="@drawable/ic_loan" style="@style/meter_menu_imageView" />
+						<TextView android:id="@id/LoanText" android:text="@string/loan" style="@style/meter_menu_textView" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</RelativeLayout>
